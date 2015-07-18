@@ -1,22 +1,10 @@
 import UIKit
 
-extension Array {
-    subscript(path: NSIndexPath) -> Element {
-        return self[path.row]
-    }
-}
-
-extension NSIndexPath {
-    class func firstIndexPath() -> NSIndexPath {
-        return NSIndexPath(forRow: 0, inSection: 0)
-    }
-}
-
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var selectedItemLabel: UILabel!
-
+    // Popover containing a table of numbers to allow selection, 
+    // presentation is somewhat managed by the Presentation Delegate
     lazy var popover: PopoverTableViewController = {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let popover = storyboard.instantiateViewControllerWithIdentifier("PopoverTableView") as! PopoverTableViewController
@@ -26,18 +14,17 @@ class ViewController: UIViewController {
 
     let popoverDelegate = PresentationDelegate()
 
-    var selectedItem: String?
-
+    // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    func selectionHandler(selectedItem: String) -> Void!{
-        self.selectedItem = selectedItem
+    // Handle Popover Selection
+    func selectionHandler(selectedItem: String){
         selectedItemLabel.text = selectedItem
-        return Void()
     }
 
+    // MARK: - Actions
     @IBAction func displayPopover(sender: UIBarButtonItem) {
         popover.modalPresentationStyle = UIModalPresentationStyle.Popover
         let popPC = popover.popoverPresentationController
