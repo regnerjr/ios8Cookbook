@@ -12,6 +12,8 @@
 		522F3D0F1B596B3E00191BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522F3D0D1B596B3E00191BEA /* Main.storyboard */; };
 		522F3D111B596B3E00191BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522F3D101B596B3E00191BEA /* Assets.xcassets */; };
 		522F3D141B596B3E00191BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522F3D121B596B3E00191BEA /* LaunchScreen.storyboard */; };
+		522F3D1C1B596DD800191BEA /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F3D1B1B596DD800191BEA /* PopoverTableViewController.swift */; };
+		523BE81E1B59895B0049FFA5 /* PresentaionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BE81D1B59895B0049FFA5 /* PresentaionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		522F3D101B596B3E00191BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522F3D131B596B3E00191BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522F3D151B596B3E00191BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522F3D1B1B596DD800191BEA /* PopoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
+		523BE81D1B59895B0049FFA5 /* PresentaionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentaionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				522F3D091B596B3E00191BEA /* AppDelegate.swift */,
 				522F3D0B1B596B3E00191BEA /* ViewController.swift */,
+				523BE81D1B59895B0049FFA5 /* PresentaionDelegate.swift */,
+				522F3D1B1B596DD800191BEA /* PopoverTableViewController.swift */,
 				522F3D0D1B596B3E00191BEA /* Main.storyboard */,
 				522F3D101B596B3E00191BEA /* Assets.xcassets */,
 				522F3D121B596B3E00191BEA /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				522F3D0C1B596B3E00191BEA /* ViewController.swift in Sources */,
+				522F3D1C1B596DD800191BEA /* PopoverTableViewController.swift in Sources */,
 				522F3D0A1B596B3E00191BEA /* AppDelegate.swift in Sources */,
+				523BE81E1B59895B0049FFA5 /* PresentaionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				522F3D1A1B596B3E00191BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
